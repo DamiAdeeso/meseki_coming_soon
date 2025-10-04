@@ -144,30 +144,30 @@ export default function Home() {
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 text-center">
         {/* Logo/Brand Name */}
-        <div className="mb-4 md:mb-6">
-          <h1 className="text-5xl md:text-6xl font-bold mb-2 md:mb-3 tracking-wider" style={{ color: '#f5f3f2' }}>
+        <div className="mb-3 md:mb-6">
+          <h1 className="text-4xl md:text-6xl font-bold mb-1 md:mb-3 tracking-wider" style={{ color: '#f5f3f2' }}>
             MESEKI
           </h1>
           <div className="w-24 h-1 mx-auto" style={{ backgroundColor: '#f5f3f2' }}></div>
         </div>
 
         {/* Coming Soon Text */}
-        <div className="mb-6 md:mb-8">
-          <h2 className="text-xl md:text-2xl font-light mb-2 md:mb-3" style={{ color: '#f5f3f2' }}>
+        <div className="mb-4 md:mb-8">
+          <h2 className="text-lg md:text-2xl font-light mb-1 md:mb-3" style={{ color: '#f5f3f2' }}>
             Coming Soon
           </h2>
-          <p className="text-base md:text-lg max-w-2xl mx-auto leading-relaxed" style={{ color: '#f5f3f2' }}>
+          <p className="text-sm md:text-lg max-w-2xl mx-auto leading-relaxed" style={{ color: '#f5f3f2' }}>
             We're crafting something extraordinary. A new era of fashion is about to begin.
           </p>
         </div>
 
 
          {/* Countdown Timer */}
-         <div className="mb-6 md:mb-8">
+         <div className="mb-4 md:mb-8">
            {/* Mobile: Single line without boxes */}
            <div className="md:hidden text-center">
              <div className="relative">
-               <div className="text-5xl font-bold mb-3 tracking-wider" style={{ color: '#f5f3f2' }}>
+               <div className="text-4xl font-bold mb-2 tracking-wider" style={{ color: '#f5f3f2' }}>
                  <span className="inline-block min-w-[3rem] text-center">
                    {showCountdown ? displayTime.days.toString().padStart(2, '0') : '00'}
                  </span>
@@ -184,7 +184,7 @@ export default function Home() {
                    {showCountdown ? displayTime.seconds.toString().padStart(2, '0') : '00'}
                  </span>
                </div>
-               <div className="text-xs uppercase tracking-[0.2em] font-light" style={{ color: '#f5f3f2' }}>
+               <div className="text-xs uppercase tracking-[0.2em] font-light mb-1" style={{ color: '#f5f3f2' }}>
                  <span className="inline-block min-w-[3rem] text-center">Days</span>
                  <span className="mx-2 opacity-0">:</span>
                  <span className="inline-block min-w-[3rem] text-center">Hours</span>
@@ -234,7 +234,7 @@ export default function Home() {
          </div>
 
          {/* Email Signup */}
-         <div className="mb-6 md:mb-8 max-w-md w-full">
+         <div className="mb-4 md:mb-8 max-w-md w-full">
            <form onSubmit={handleEmailSubmit} className="flex flex-col sm:flex-row gap-4">
              <input
                type="email"
@@ -270,16 +270,17 @@ export default function Home() {
          </div>
 
          {/* Interactive Section */}
-         <div className="mb-4 md:mb-6 max-w-2xl mx-auto">
-           <div className="text-center mb-4">
-             <h3 className="text-base md:text-lg font-semibold mb-2" style={{ color: '#f5f3f2' }}>
+         <div className="mb-3 md:mb-6 max-w-2xl mx-auto">
+           <div className="text-center mb-3 md:mb-4">
+             <h3 className="text-sm md:text-lg font-semibold mb-1 md:mb-2" style={{ color: '#f5f3f2' }}>
                Already Live on Social Media
              </h3>
              <p className="text-xs md:text-sm" style={{ color: '#f5f3f2' }}>
                While we're preparing for our official website launch, you can already interact with us and place orders through our social media channels.
              </p>
            </div>
-           <div className="flex flex-col sm:flex-row gap-2 justify-center mb-4">
+           {/* Desktop only badges */}
+           <div className="hidden md:flex flex-col sm:flex-row gap-2 justify-center mb-4">
              <div className="flex items-center justify-center p-2 bg-white/10 rounded-lg">
                <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24" style={{ color: '#d4b8a3' }}>
                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>

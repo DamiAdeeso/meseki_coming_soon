@@ -182,6 +182,39 @@ export default function MyLinks() {
             ))}
           </div>
 
+          {/* Interactive Section */}
+          <div className="text-center mb-12">
+            <div className="bg-white/5 backdrop-blur-sm border-2 border-white/20 rounded-xl p-8 max-w-4xl mx-auto">
+              <h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: '#f5f3f2' }}>
+                Ready to Shop?
+              </h2>
+              <p className="text-lg mb-6" style={{ color: '#f5f3f2' }}>
+                While we're preparing for our official website launch, you can already interact with us and place orders through our social media channels. 
+                Follow us to stay updated on exclusive early access and special website launch offers.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <div className="flex items-center justify-center p-4 bg-white/10 rounded-lg">
+                  <svg className="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24" style={{ color: '#d4b8a3' }}>
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                  </svg>
+                  <span style={{ color: '#f5f3f2' }}>Orders Available</span>
+                </div>
+                <div className="flex items-center justify-center p-4 bg-white/10 rounded-lg">
+                  <svg className="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24" style={{ color: '#d4b8a3' }}>
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                  </svg>
+                  <span style={{ color: '#f5f3f2' }}>Early Access</span>
+                </div>
+                <div className="flex items-center justify-center p-4 bg-white/10 rounded-lg">
+                  <svg className="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24" style={{ color: '#d4b8a3' }}>
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11H7v-2h10v2z"/>
+                  </svg>
+                  <span style={{ color: '#f5f3f2' }}>Special Offers</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* Contact Section */}
           <div className="mt-16 text-center">
              <div className="bg-white/5 backdrop-blur-sm border-2 border-white/20 rounded-xl p-8">
