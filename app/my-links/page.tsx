@@ -248,7 +248,6 @@ export default function MyLinks() {
       </div>
 
       {/* Newsletter Modal */}
-      {console.log('showModal state:', showModal)}
       {showModal && (
         <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
           <div className="bg-white/10 backdrop-blur-sm border-2 border-white/20 rounded-xl p-8 max-w-md w-full">
