@@ -76,11 +76,15 @@ export default function Home() {
       animateNumber(initialTime.seconds, (value) => setDisplayTime(prev => ({ ...prev, seconds: value })), 2000)
     }, 1000)
 
-    // Regular countdown updates
+    // Regular countdown updates - start immediately but update display smoothly
     const timer = setInterval(() => {
       const newTime = calculateTimeLeft()
       setTimeLeft(newTime)
-      setDisplayTime(newTime) // Update display time after animation completes
+      
+      // Smooth transition to real values after animation
+      setTimeout(() => {
+        setDisplayTime(newTime)
+      }, 2000) // Wait for animation to complete
     }, 1000)
 
     return () => {
