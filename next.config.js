@@ -1,11 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Disable build trace collection to avoid Vercel issues
-  experimental: {
-    buildTrace: false,
-  },
-  // Disable static optimization for problematic pages
-  trailingSlash: false,
+  // Minimal config to avoid Vercel build issues
 }
 
 module.exports = nextConfig
