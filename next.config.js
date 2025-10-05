@@ -8,10 +8,6 @@ const nextConfig = {
   },
   // Enable compression
   compress: true,
-  // Optimize bundle
-  experimental: {
-    optimizeCss: true,
-  }
 }
 
 module.exports = nextConfig
