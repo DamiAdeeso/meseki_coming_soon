@@ -11,8 +11,7 @@ export default function NotFound() {
         style={{
           backgroundImage: `
             url('/images/desktop-bg-optimized.webp'),
-            url('/images/desktop-bg-optimized.jpg'),
-            url('/images/desktop-bg.png')
+            url('/images/desktop-bg-optimized.jpg')
           `
         }}
       />
@@ -22,8 +21,7 @@ export default function NotFound() {
         style={{
           backgroundImage: `
             url('/images/mobile-bg-optimized.webp'),
-            url('/images/mobile-bg-optimized.jpg'),
-            url('/images/mobile-bg.png')
+            url('/images/mobile-bg-optimized.jpg')
           `
         }}
       />
