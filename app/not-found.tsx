@@ -9,18 +9,18 @@ export default function NotFound() {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20 transition-opacity duration-500"
         style={{
-          backgroundImage: "url('/images/desktop-bg-optimized.webp')"
+          backgroundImage: "url('/images/desktop-bg-fallback.jpg')",
+          zIndex: 1
         }}
       />
       {/* Mobile Background */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20 md:hidden transition-opacity duration-500"
         style={{
-          backgroundImage: "url('/images/mobile-bg-optimized.webp')"
+          backgroundImage: "url('/images/mobile-bg-fallback.jpg')",
+          zIndex: 1
         }}
       />
-      {/* Loading fallback background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-black" />
       
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/50" />
