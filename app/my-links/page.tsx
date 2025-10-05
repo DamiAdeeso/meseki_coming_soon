@@ -95,20 +95,14 @@ export default function MyLinks() {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20 transition-opacity duration-500"
         style={{
-          backgroundImage: `
-            url('/images/desktop-bg-optimized.webp'),
-            url('/images/desktop-bg-optimized.jpg')
-          `
+          backgroundImage: "url('/images/desktop-bg-optimized.webp')"
         }}
       />
       {/* Mobile Background */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20 md:hidden transition-opacity duration-500"
         style={{
-          backgroundImage: `
-            url('/images/mobile-bg-optimized.webp'),
-            url('/images/mobile-bg-optimized.jpg')
-          `
+          backgroundImage: "url('/images/mobile-bg-optimized.webp')"
         }}
       />
       {/* Loading fallback background */}
