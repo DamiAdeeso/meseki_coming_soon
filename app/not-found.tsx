@@ -7,18 +7,28 @@ export default function NotFound() {
     <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black relative overflow-hidden">
       {/* Background Image - you can replace this with your custom background */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20 transition-opacity duration-500"
         style={{
-          backgroundImage: "url('/images/desktop-bg.png')"
+          backgroundImage: `
+            url('/images/desktop-bg-optimized.webp'),
+            url('/images/desktop-bg-optimized.jpg'),
+            url('/images/desktop-bg.png')
+          `
         }}
       />
       {/* Mobile Background */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20 md:hidden"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20 md:hidden transition-opacity duration-500"
         style={{
-          backgroundImage: "url('/images/mobile-bg.png')"
+          backgroundImage: `
+            url('/images/mobile-bg-optimized.webp'),
+            url('/images/mobile-bg-optimized.jpg'),
+            url('/images/mobile-bg.png')
+          `
         }}
       />
+      {/* Loading fallback background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-black" />
       
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/50" />
